@@ -1,11 +1,21 @@
-import React from 'react'
+import React from 'react';
+import LoremGenerator from './components/LoremGenerator';
+import Navbar from './components/Navbar';
+import Hero from './components/Hero';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
-    <div>
-      Lipsum Lab
-    </div>
-  )
-}
+    <div className="min-h-screen bg-[#fdf0d5]">
+      <Navbar />
+      
+      <Hero />
 
-export default App
+      <LoremGenerator />
+
+      <Footer />
+    </div>
+  );
+};
+
+export default App;
